@@ -1,0 +1,22 @@
+--cpu Cortex-M7.fp.dp
+".\objects\main.o"
+".\objects\tim.o"
+".\objects\spi.o"
+".\objects\stm32f7xx_hal.o"
+".\objects\stm32f7xx_hal_cortex.o"
+".\objects\stm32f7xx_hal_dma.o"
+".\objects\stm32f7xx_hal_dma_ex.o"
+".\objects\stm32f7xx_hal_gpio.o"
+".\objects\stm32f7xx_hal_pwr.o"
+".\objects\stm32f7xx_hal_pwr_ex.o"
+".\objects\stm32f7xx_hal_rcc.o"
+".\objects\stm32f7xx_hal_rcc_ex.o"
+".\objects\stm32f7xx_hal_spi.o"
+".\objects\stm32f7xx_hal_tim.o"
+".\objects\stm32f7xx_hal_tim_ex.o"
+".\objects\startup_stm32f767xx.o"
+".\objects\system_stm32f7xx.o"
+--strict --scatter ".\Objects\time.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\time.map" -o .\Objects\time.axf

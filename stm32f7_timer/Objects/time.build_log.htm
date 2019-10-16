@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: meach will, ncu, LIC=6XJII-TJDAM-66GQS-LLS74-H2EWN-PXLA4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      UL2CM3.DLL V1.159.7.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Documents\stm32f7\stm32f7_timer\time.uvprojx
+Project File Date:  10/16/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.c(13): warning:  #550-D: variable "Rcc_OscInitStruct"  was set but never used
+  	RCC_OscInitTypeDef Rcc_OscInitStruct = {0};
+main.c(14): warning:  #177-D: variable "RCC_ClkInitStruct"  was declared but never referenced
+  	RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=436 RO-data=520 RW-data=0 ZI-data=1632  
+".\Objects\time.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM::CMSIS:CORE:5.2.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.11.0.pack
+                ::Device:STM32Cube Framework:1.0.0 (API)
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Startup Version: 1.2.2
+   * Component: Classic Version: 1.2.6
+   * Component: PWR Version: 1.2.6
+   * Component: RCC Version: 1.2.6
+   * Component: Cortex Version: 1.2.6
+   * Component: GPIO Version: 1.2.6
+   * Component: Common Version: 1.2.6
+   * Component: DMA Version: 1.2.6
+   * Component: SPI Version: 1.2.6
+   * Component: TIM Version: 1.2.6
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F767ZITx
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.11.0\Drivers\STM32F7xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: Keil::Device:Startup:1.2.2
+      Source file:   MDK\Device\Source\ARM\STM32F76x_77x_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F76x_77x_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\arm\startup_stm32f767xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\system_stm32f7xx.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.2.6
+      Source file:   MDK\Templates\Src\main.c
+      Source file:   MDK\Templates\Src\stm32f7xx_hal_msp.c
+      Include file:  MDK\Templates\Inc\stm32f7xx_it.h
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Source file:   MDK\Templates\Src\stm32f7xx_it.c
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Include file:  MDK\Templates\Inc\stm32f7xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.c
+      Include file:  Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:SPI:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.2.6
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
